@@ -6,13 +6,13 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>a6935425-36ba-4172-8b12-6b1aa4672533</groupId>
+    <groupId>706f4d0a-e4a3-40fb-8365-ae5ac1f0a8d7</groupId>
     <artifactId>bom</artifactId>
     <version>1.0.0</version>
     <relativePath>../apprd-bom/pom.xml</relativePath>
   </parent>
 
-  <groupId>a6935425-36ba-4172-8b12-6b1aa4672533</groupId>
+  <groupId>706f4d0a-e4a3-40fb-8365-ae5ac1f0a8d7</groupId>
   <artifactId>parent-pom</artifactId>
   <version>1.0.0</version>
   <packaging>pom</packaging>
@@ -75,10 +75,10 @@
           <extensions>true</extensions>
           <configuration>
             <cloudhub2Deployment>
-              <businessGroup>Projects</businessGroup>
+              <businessGroup />
               <environment>${ap.environment}</environment>
               <muleVersion>${app.runtime.semver}</muleVersion>
-              <target>Cloudhub-AP-Southeast-1</target>
+              <target>viseo-asia-private-space</target>
               <provider>MC</provider>
               <replicas>1</replicas>
               <vCores>0.1</vCores>
@@ -87,6 +87,7 @@
               <connectedAppClientSecret>${ap.ca.client_secret}</connectedAppClientSecret>
               <connectedAppGrantType>client_credentials</connectedAppGrantType>
               <properties>
+                <user.timezone>${user.timezone}</user.timezone>
                 <env>${api.env}</env>
                 <anypoint.platform.config.analytics.agent.enabled>true</anypoint.platform.config.analytics.agent.enabled>
                 <anypoint.platform.visualizer.displayName>${project.name}</anypoint.platform.visualizer.displayName>
@@ -101,8 +102,10 @@
                 <http>
                   <inbound>
                     <lastMileSecurity>true</lastMileSecurity>
+                    <forwardSslSession>false</forwardSslSession>
                   </inbound>
                 </http>
+                <generateDefaultPublicUrl>true</generateDefaultPublicUrl>
               </deploymentSettings>
               <integrations>
                 <services>
