@@ -7,17 +7,17 @@
 
   <parent>
     <groupId>706f4d0a-e4a3-40fb-8365-ae5ac1f0a8d7</groupId>
-    <artifactId>bom</artifactId>
-    <version>1.0.0</version>
+    <artifactId>apprd-bom</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
     <relativePath>../apprd-bom/pom.xml</relativePath>
   </parent>
 
   <groupId>706f4d0a-e4a3-40fb-8365-ae5ac1f0a8d7</groupId>
-  <artifactId>parent-pom</artifactId>
-  <version>1.0.1</version>
+  <artifactId>apprd-parent-pom</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
-  <name>parent-pom</name>
+  <name>apprd-parent-pom</name>
 
   <properties>
     <api.layer.eapi>Experience</api.layer.eapi>
