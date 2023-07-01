@@ -8,13 +8,13 @@
   <parent>
     <groupId>706f4d0a-e4a3-40fb-8365-ae5ac1f0a8d7</groupId>
     <artifactId>bom</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.0</version>
     <relativePath>../apprd-bom/pom.xml</relativePath>
   </parent>
 
   <groupId>706f4d0a-e4a3-40fb-8365-ae5ac1f0a8d7</groupId>
   <artifactId>parent-pom</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <packaging>pom</packaging>
 
   <name>parent-pom</name>
